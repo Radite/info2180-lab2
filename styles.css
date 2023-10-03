@@ -1,0 +1,116 @@
+/* Default Styles */
+body {
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+header {
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / -1;  /* Take full width */
+    grid-row: 1;  /* Explicitly placing the header in the first row */
+    flex-direction: column;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+main {
+    grid-column: 2;
+    grid-row: 2;  /* Explicitly placing the main content in the second row */
+}
+
+aside {
+    grid-column: 1;
+    grid-row: 2;  /* Explicitly placing the sidebar in the second row */
+}
+
+footer {
+    background-color: #2C5282;
+    color: #FFFFFF;
+    text-align: center;
+    grid-column: 1 / -1; /* Take full width */
+    padding: 10px;
+}
+
+/* Blog Posts */
+article {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-size: 32px;
+    color: #48BB78;
+    margin-top: 0;
+}
+
+article p.date-author {
+    color: #718096;
+    margin-bottom: 20px;
+}
+
+article img {
+    float: left;
+    margin-right: 20px;
+    width: auto;
+    max-height: 150px;
+}
+
+/* Sidebar */
+aside h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+}
+
+aside h3.about-title {
+    color: #000000;
+    background-color: #E2E8F0;
+    padding: 10px;
+}
+
+aside h3.social-title, 
+aside h3.archive-title {
+    color: #48BB78;
+}
+
+aside a {
+    color: #4299E1;
+    text-decoration: none;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+.about-title, .about-description {
+    background-color: #E2E8F0;
+    padding: 10px;  /* Add padding for spacing */
+}
+
+/* Header Image */
+header img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 100px; /* or whatever size you prefer */
+    height: 100px;
+}
